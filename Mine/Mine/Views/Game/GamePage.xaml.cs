@@ -14,7 +14,7 @@ namespace Mine.Views
     {
         public GamePage()
         {
-            //InitializeComponent();
+            InitializeComponent();
         }
     }
 }
