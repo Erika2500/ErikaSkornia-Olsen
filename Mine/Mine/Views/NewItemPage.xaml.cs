@@ -26,6 +26,17 @@ namespace Mine.Views
             };
 
             BindingContext = this;
+
+        }
+
+        /// <summary>
+        ///  Update display value as Stepper changes
+        /// </summary>
+        /// <param name="sender"></param>
+        /// <param name="e"></param>
+        void Value_OnStepperValueChanged(object sender, ValueChangedEventArgs e)
+        {
+            ValueValue.Text = String.Format("{0}", e.NewValue);
         }
 
         async void Save_Clicked(object sender, EventArgs e)
@@ -38,5 +49,6 @@ namespace Mine.Views
         {
             await Navigation.PopModalAsync();
         }
+
     }
 }
