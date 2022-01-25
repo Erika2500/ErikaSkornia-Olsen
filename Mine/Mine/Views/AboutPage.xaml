@@ -38,7 +38,7 @@
             <StackLayout Orientation="Vertical" Padding="16,40,16,40" Spacing="10">
                 <Label Text="CPSC 5250 WQ22"></Label>
                 <Label Text="Erika Skornia-Olsen"></Label>
-                <Label Text="1/18/2022 - 9:27pm"></Label>
+                <Label x:Name="CurrentDateTimeLabel"></Label>
             </StackLayout>
         </ScrollView>
     </Grid>
