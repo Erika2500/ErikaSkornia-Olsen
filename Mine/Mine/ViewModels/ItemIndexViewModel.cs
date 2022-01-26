@@ -116,7 +116,7 @@ namespace Mine.ViewModels
             {
 
                 // Call to update it in Data Store
-                var result = await DataStore.UpdateItemAsync(data);
+                var result = await DataStore.UpdateAsync(data);
 
                 var canExecute = LoadItemsCommand.CanExecute(null);
                 LoadItemsCommand.Execute(null);
