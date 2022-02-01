@@ -51,10 +51,10 @@ namespace Mine.Services
             return true;
         }
         /// <summary>
-        /// 
+        /// Updates item in database
         /// </summary>
         /// <param name="item"></param>
-        /// <returns></returns>
+        /// <returns>true if update made, otherwise false</returns>
         public async Task<bool> UpdateAsync(ItemModel item)
         {
             if (item == null)
