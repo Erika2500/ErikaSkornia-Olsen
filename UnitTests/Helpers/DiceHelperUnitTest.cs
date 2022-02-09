@@ -17,6 +17,7 @@ namespace UnitTests.Helpers
             // Arrange
             // Act
             var result = DiceHelper.RollDice(0, 1);
+
             // Reset
             // Assert 
             Assert.AreEqual(0, result);
@@ -33,6 +34,17 @@ namespace UnitTests.Helpers
             // Assert
             Assert.AreEqual(true, result >= 1);
             Assert.AreEqual(true, result <= 6);
+        }
+
+        [Test]
+        public void RollDice_Invalid_Dice_Less_Than_1_Should_Return_0()
+        {
+            // Arrange
+            // Act
+            var result = DiceHelper.RollDice(1, 0);
+            // Reset
+            // Assert 
+            Assert.AreEqual(0, result);
         }
 
         [Test]
